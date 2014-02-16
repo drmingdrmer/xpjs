@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Untitled Document</title>
+		<script src="js/Loader.js"></script>
+	</head>
+	<body>
+		<script>
+			var l = new Loader({
+				runLoad : function(){
+					l.loadJS("Module.js");
+					//l.loadModule("net.xp.prototype.str.URL");
+					l.loadModule("net.xp.dom.IframeComponentHost");
+				},
+				onLoadFinish : function(){
+					var m=Module.get("net.xp.dom.IframeComponentHost");
+					alert(m.addEventListener);
+					//alert(Module.get("net.xp.prototype.str.URL").hashCode);
+				}
+			});
+		</script>
+		<div id=dbg>
+			
+		</div>
+	</body>
+</html>

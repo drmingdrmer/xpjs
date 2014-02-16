@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Untitled Document</title>
+		<link id="css" rel="stylesheet" href="tt.css" type="text/css" media="screen" charset="utf-8" />
+		<script>
+			function $(id){
+				return document.getElementById(id);
+			}
+			function job(){
+				var css = $("css");
+				//alert(document.styleSheets["css"]);//.rules[0].selectorText);
+				//alert(css.sheet.cssRules.length);
+				//alert(css.sheet.rules);
+				//alert(css.innerHTML);
+
+				//var rs = document.styleSheets["css"].rules;
+				//var rs = css.sheet.cssRules;
+				//alert(rs[0].style.backgroundColor="#f00");
+
+				//var s = String.fromCharCode(65,0,65);
+				//alert(s.charCodeAt(1));
+				for (var i=0; i<2; i++) alert(i);
+			}
+		</script>
+	</head>
+	<body onload="job();">
+		
+	</body>
+</html>
